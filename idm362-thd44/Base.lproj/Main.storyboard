@@ -52,10 +52,19 @@
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5Hk-8L-UdI">
+                                <rect key="frame" x="16" y="298.66666666666669" width="361" height="32"/>
+                                <segments>
+                                    <segment title="Income"/>
+                                    <segment title="Expense"/>
+                                    <segment title="All"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5Hk-8L-UdI" firstAttribute="trailing" secondItem="DXV-PP-Z2C" secondAttribute="trailing" id="1M3-HO-A8V"/>
                             <constraint firstItem="DXV-PP-Z2C" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BVy-g0-uJg" secondAttribute="trailing" constant="8" symbolic="YES" id="1NJ-xJ-Bff"/>
                             <constraint firstItem="Dgi-IJ-V4u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2tA-wn-Ija"/>
                             <constraint firstItem="leC-Ui-nMc" firstAttribute="centerX" secondItem="Dgi-IJ-V4u" secondAttribute="centerX" id="89R-cP-5wA"/>
@@ -65,8 +74,10 @@
                             <constraint firstItem="g6B-QF-IEx" firstAttribute="centerX" secondItem="DXV-PP-Z2C" secondAttribute="centerX" id="Uew-dA-o6h"/>
                             <constraint firstItem="DXV-PP-Z2C" firstAttribute="top" secondItem="leC-Ui-nMc" secondAttribute="bottom" constant="32" id="Wcu-0c-Nbj"/>
                             <constraint firstItem="wBO-pV-ACP" firstAttribute="top" secondItem="BVy-g0-uJg" secondAttribute="bottom" id="XaO-cg-5UR"/>
+                            <constraint firstItem="5Hk-8L-UdI" firstAttribute="leading" secondItem="BVy-g0-uJg" secondAttribute="leading" id="h9Q-Zo-gMh"/>
                             <constraint firstItem="leC-Ui-nMc" firstAttribute="top" secondItem="Dgi-IJ-V4u" secondAttribute="bottom" id="hj5-RV-csz"/>
                             <constraint firstItem="g6B-QF-IEx" firstAttribute="top" secondItem="DXV-PP-Z2C" secondAttribute="bottom" id="jbS-8f-2dk"/>
+                            <constraint firstItem="5Hk-8L-UdI" firstAttribute="top" secondItem="wBO-pV-ACP" secondAttribute="bottom" constant="32" id="t56-YR-3VI"/>
                             <constraint firstItem="BVy-g0-uJg" firstAttribute="top" secondItem="leC-Ui-nMc" secondAttribute="bottom" constant="32" id="vRf-Hb-apE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DXV-PP-Z2C" secondAttribute="trailing" constant="16" id="vf3-IB-HmZ"/>
                         </constraints>
