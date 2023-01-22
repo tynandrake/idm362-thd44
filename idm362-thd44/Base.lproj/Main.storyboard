@@ -89,9 +89,12 @@
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UAQ-0x-dHR" secondAttribute="trailing" constant="20" symbolic="YES" id="ytW-VM-CnP"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="square.and.pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Gb2-iM-Akf">
-                                <rect key="frame" x="356" y="782" width="21" height="18.666666666666629"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="plus.app" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0Xd-k7-P9K">
+                                <rect key="frame" x="175.24876184961113" y="774.66666666666663" width="41.999999999999979" height="42"/>
                                 <color key="tintColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="pFK-Qd-hdN"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -103,13 +106,13 @@
                             <constraint firstItem="leC-Ui-nMc" firstAttribute="centerX" secondItem="Dgi-IJ-V4u" secondAttribute="centerX" id="89R-cP-5wA"/>
                             <constraint firstItem="BVy-g0-uJg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Eto-gT-dII"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7ln-6B-Xy6" secondAttribute="bottom" constant="414" id="G2B-7l-aij"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gb2-iM-Akf" secondAttribute="trailing" constant="16" id="Hqc-CR-rgE"/>
+                            <constraint firstItem="0Xd-k7-P9K" firstAttribute="centerX" secondItem="7ln-6B-Xy6" secondAttribute="centerX" id="JfK-FZ-IJ6"/>
+                            <constraint firstItem="0Xd-k7-P9K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175.24876184961113" id="Kmb-lS-J5s"/>
                             <constraint firstItem="Dgi-IJ-V4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="T5i-WR-I9F"/>
                             <constraint firstItem="wBO-pV-ACP" firstAttribute="centerX" secondItem="BVy-g0-uJg" secondAttribute="centerX" id="U3z-hh-rEP"/>
                             <constraint firstItem="g6B-QF-IEx" firstAttribute="centerX" secondItem="DXV-PP-Z2C" secondAttribute="centerX" id="Uew-dA-o6h"/>
                             <constraint firstItem="DXV-PP-Z2C" firstAttribute="top" secondItem="leC-Ui-nMc" secondAttribute="bottom" constant="32" id="Wcu-0c-Nbj"/>
                             <constraint firstItem="wBO-pV-ACP" firstAttribute="top" secondItem="BVy-g0-uJg" secondAttribute="bottom" id="XaO-cg-5UR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gb2-iM-Akf" secondAttribute="bottom" constant="16" id="cKW-FF-UHS"/>
                             <constraint firstItem="5Hk-8L-UdI" firstAttribute="leading" secondItem="BVy-g0-uJg" secondAttribute="leading" id="h9Q-Zo-gMh"/>
                             <constraint firstItem="leC-Ui-nMc" firstAttribute="top" secondItem="Dgi-IJ-V4u" secondAttribute="bottom" id="hj5-RV-csz"/>
                             <constraint firstItem="7ln-6B-Xy6" firstAttribute="top" secondItem="5Hk-8L-UdI" secondAttribute="bottom" constant="16" id="iMM-wq-jjw"/>
@@ -118,6 +121,7 @@
                             <constraint firstItem="5Hk-8L-UdI" firstAttribute="top" secondItem="wBO-pV-ACP" secondAttribute="bottom" constant="32" id="t56-YR-3VI"/>
                             <constraint firstItem="BVy-g0-uJg" firstAttribute="top" secondItem="leC-Ui-nMc" secondAttribute="bottom" constant="32" id="vRf-Hb-apE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DXV-PP-Z2C" secondAttribute="trailing" constant="16" id="vf3-IB-HmZ"/>
+                            <constraint firstItem="0Xd-k7-P9K" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="w55-r4-UUn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7ln-6B-Xy6" secondAttribute="trailing" constant="16" id="zNW-ba-0eK"/>
                         </constraints>
                     </view>
@@ -128,7 +132,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
