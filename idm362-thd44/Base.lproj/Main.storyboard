@@ -142,7 +142,7 @@
                             <constraint firstItem="Dgi-IJ-V4u" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="vCh-Lw-l9O"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="house.fill" catalog="system" id="Z1l-P4-eAd">
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="Z1l-P4-eAd">
                         <color key="badgeColor" name="AccentColor"/>
                     </tabBarItem>
                 </viewController>
@@ -157,10 +157,34 @@
                     <view key="view" contentMode="scaleToFill" id="ZE9-0s-taQ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqn-Ka-i6N">
+                                <rect key="frame" x="16" y="59" width="127" height="44"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="32"/>
+                                <color key="textColor" name="AccentColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcH-tA-1Pc">
+                                <rect key="frame" x="16" y="143" width="63" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="XFZ-ff-8WR"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jcH-tA-1Pc" firstAttribute="top" secondItem="Oqn-Ka-i6N" secondAttribute="bottom" constant="40" id="6PK-EO-CHy"/>
+                            <constraint firstItem="jcH-tA-1Pc" firstAttribute="leading" secondItem="XFZ-ff-8WR" secondAttribute="leading" constant="16" id="EfB-vd-qQp"/>
+                            <constraint firstItem="XFZ-ff-8WR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Oqn-Ka-i6N" secondAttribute="trailing" symbolic="YES" id="Rsr-vV-5as"/>
+                            <constraint firstItem="XFZ-ff-8WR" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jcH-tA-1Pc" secondAttribute="trailing" symbolic="YES" id="U1M-WZ-Ra4"/>
+                            <constraint firstItem="Oqn-Ka-i6N" firstAttribute="top" secondItem="XFZ-ff-8WR" secondAttribute="top" id="nuu-X2-N8L"/>
+                            <constraint firstItem="Oqn-Ka-i6N" firstAttribute="leading" secondItem="jcH-tA-1Pc" secondAttribute="leading" id="yWQ-eZ-fg2"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="gear.circle.fill" catalog="system" id="Tjn-Dp-wy4"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear.circle.fill" catalog="system" id="Tjn-Dp-wy4">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qi4-nJ-nNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,9 +197,6 @@
         <namedColor name="AccentColor">
             <color red="1" green="0.17599999904632568" blue="0.33299997448921204" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
