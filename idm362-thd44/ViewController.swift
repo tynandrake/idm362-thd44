@@ -11,15 +11,18 @@ class ViewController: UIViewController {
     
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
     }
-
+    
+    @IBOutlet weak var UITransactionType: UIButton!
+    
     
     @IBOutlet weak var displayLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-
+   
 }
 

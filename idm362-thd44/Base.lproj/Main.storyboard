@@ -39,7 +39,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="$400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-IJ-V4u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="$400" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dgi-IJ-V4u" customClass="differenceLabel">
                                 <rect key="frame" x="112" y="103" width="166" height="87"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="64"/>
                                 <color key="textColor" systemColor="systemPinkColor"/>
@@ -51,7 +51,7 @@
                                 <color key="textColor" systemColor="systemGrayColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="$650" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-g0-uJg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="$650" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVy-g0-uJg" customClass="incomeTotalLabel">
                                 <rect key="frame" x="16" y="244" width="79" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Hk8-6E-2XY"/>
@@ -60,7 +60,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$350" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXV-PP-Z2C">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$350" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXV-PP-Z2C" customClass="expenseTotalLabel">
                                 <rect key="frame" x="297" y="244" width="78.333333333333314" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="LEj-Ua-ABp"/>
@@ -150,7 +150,7 @@
                     <navigationItem key="navigationItem" id="fAr-dd-e8d">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="plus" catalog="system" id="reT-nI-2VR">
                             <connections>
-                                <segue destination="YDp-CV-YHa" kind="presentation" id="6OL-cz-xne"/>
+                                <segue destination="Bdh-oF-iCt" kind="presentation" id="tuT-td-ae7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -160,18 +160,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1602.2900763358778" y="2336.6197183098593"/>
+            <point key="canvasLocation" x="1601" y="2337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mEV-Np-lFj">
+            <objects>
+                <navigationController id="Bdh-oF-iCt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AmS-xh-iJk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cjq-bN-3Ct" kind="show" id="4ee-in-5Qa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cai-uo-QLw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="3077"/>
         </scene>
         <!--Transaction Modal-->
         <scene sceneID="h4E-kx-6sv">
             <objects>
-                <viewController title="Transaction Modal" id="cjq-bN-3Ct" customClass="ViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gwZ-OB-wlo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ykC-aU-pSi" userLabel="Exit" sceneMemberID="exit"/>
+                <viewController title="Transaction Modal" id="cjq-bN-3Ct" customClass="ViewControllerTransaction" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1CG-Ep-nG3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Oir-cv-T1e">
-                                <rect key="frame" x="16" y="56" width="361" height="179"/>
+                                <rect key="frame" x="16" y="59" width="361" height="179"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transaction Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gWH-vI-WYC">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
@@ -230,29 +248,13 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="nnm-t8-a10"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="PopupTransactionButton" destination="enD-Fa-RIK" id="4Fl-rC-rTe"/>
+                        <outlet property="popupTransactionType" destination="enD-Fa-RIK" id="tOA-3B-7CA"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gwZ-OB-wlo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ykC-aU-pSi" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1600.7633587786258" y="3076.7605633802818"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="7a2-Hj-QhV">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YDp-CV-YHa" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="0j1-Ed-e6T">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="cjq-bN-3Ct" kind="relationship" relationship="rootViewController" id="uop-VF-L8W"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ldW-mp-C4j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="674" y="3077"/>
         </scene>
     </scenes>
     <resources>
