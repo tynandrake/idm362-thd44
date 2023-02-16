@@ -9,26 +9,24 @@ import UIKit
 
 class ViewControllerTransaction: UIViewController {
 
-    
-    @IBOutlet weak var popupTransactionType: UIButton!
+    @IBOutlet weak var transactionPopupButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        setupTransactionType()
+        setPopupButton()
     }
     
-    func setupTransactionType() {
-        // Transaction Type Setup
-        let optionsObj = {
-            (action : UIAction) in print(action.title)
+    func setPopupButton() {
+        let optionClosure = {(action : UIAction) in
+            print(action.title)}
+        
+        transactionPopupButton.menu = UIMenu(children : [
+            UIAction(title: "Income", state : .on, handler: optionClosure),
+            UIAction(title: "Expense", handler: optionClosure)])
+        
+        transactionPopupButton.showsMenuAsPrimaryAction = true
+        transactionPopupButton.changesSelectionAsPrimaryAction = true
         }
-        popupTransactionType.menu = UIMenu(children : [
-            UIAction(title: "Income", handler: optionsObj),
-            UIAction(title: "Expense", handler: optionsObj)
-        ])
-        popupTransactionType.showsMenuAsPrimaryAction = true
-        popupTransactionType.changesSelectionAsPrimaryAction = true
     }
 
-}

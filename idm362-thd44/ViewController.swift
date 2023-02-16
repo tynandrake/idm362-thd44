@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
     }
     
-    @IBOutlet weak var UITransactionType: UIButton!
     
     
     @IBOutlet weak var displayLabel: UILabel!
