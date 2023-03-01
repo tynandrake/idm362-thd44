@@ -12,7 +12,9 @@
 		81130E6F2979911900997FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81130E6E2979911900997FD7 /* ViewController.swift */; };
 		81130E722979911900997FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81130E702979911900997FD7 /* Main.storyboard */; };
 		81130E742979911A00997FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81130E732979911A00997FD7 /* Assets.xcassets */; };
-		81A862D329955A4E00032DCD /* NewTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A862D229955A4E00032DCD /* NewTransaction.swift */; };
+		81B55D6729AF156100F11E1C /* CoreDataListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B55D6529AF156100F11E1C /* CoreDataListItem+CoreDataClass.swift */; };
+		81B55D6829AF156100F11E1C /* CoreDataListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B55D6629AF156100F11E1C /* CoreDataListItem+CoreDataProperties.swift */; };
+		81B55D6B29AF167F00F11E1C /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81B55D6229AF150200F11E1C /* CoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +25,9 @@
 		81130E712979911900997FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81130E732979911A00997FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81130E782979911A00997FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81A862D229955A4E00032DCD /* NewTransaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTransaction.swift; sourceTree = "<group>"; };
+		81B55D6329AF150200F11E1C /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		81B55D6529AF156100F11E1C /* CoreDataListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81B55D6629AF156100F11E1C /* CoreDataListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,25 @@
 		81130E692979911900997FD7 /* idm362-thd44 */ = {
 			isa = PBXGroup;
 			children = (
+				81B55D6929AF156B00F11E1C /* CoreDataListItem */,
 				81130E6A2979911900997FD7 /* AppDelegate.swift */,
 				81130E6C2979911900997FD7 /* SceneDelegate.swift */,
 				81130E6E2979911900997FD7 /* ViewController.swift */,
+				81B55D6229AF150200F11E1C /* CoreData.xcdatamodeld */,
 				81130E702979911900997FD7 /* Main.storyboard */,
-				81A862D229955A4E00032DCD /* NewTransaction.swift */,
 				81130E732979911A00997FD7 /* Assets.xcassets */,
 				81130E782979911A00997FD7 /* Info.plist */,
 			);
 			path = "idm362-thd44";
+			sourceTree = "<group>";
+		};
+		81B55D6929AF156B00F11E1C /* CoreDataListItem */ = {
+			isa = PBXGroup;
+			children = (
+				81B55D6529AF156100F11E1C /* CoreDataListItem+CoreDataClass.swift */,
+				81B55D6629AF156100F11E1C /* CoreDataListItem+CoreDataProperties.swift */,
+			);
+			path = CoreDataListItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81B55D6829AF156100F11E1C /* CoreDataListItem+CoreDataProperties.swift in Sources */,
 				81130E6F2979911900997FD7 /* ViewController.swift in Sources */,
+				81B55D6B29AF167F00F11E1C /* CoreData.xcdatamodeld in Sources */,
 				81130E6B2979911900997FD7 /* AppDelegate.swift in Sources */,
-				81A862D329955A4E00032DCD /* NewTransaction.swift in Sources */,
 				81130E6D2979911900997FD7 /* SceneDelegate.swift in Sources */,
+				81B55D6729AF156100F11E1C /* CoreDataListItem+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,8 +297,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "idm362-thd44/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Budget;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_CFBundleDisplayName = Lists;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -310,8 +326,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "idm362-thd44/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Budget;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_CFBundleDisplayName = Lists;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -352,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		81B55D6229AF150200F11E1C /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81B55D6329AF150200F11E1C /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 81B55D6329AF150200F11E1C /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 81130E5F2979911800997FD7 /* Project object */;
 }
