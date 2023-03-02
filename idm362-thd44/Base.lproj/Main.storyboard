@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mgt-HZ-zua">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7NK-Eb-dch">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -63,6 +63,94 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ep-97-gTL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-4800.7633587786258" y="-564.08450704225356"/>
+        </scene>
+        <!--My Tasks-->
+        <scene sceneID="KZp-Qz-fcL">
+            <objects>
+                <tableViewController id="FGZ-tF-Aoa" customClass="TableViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="db4-Ah-6Zh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="mLl-H6-6zy">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mLl-H6-6zy" id="KYq-I7-a2p">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FGZ-tF-Aoa" id="m5c-zH-3G3"/>
+                            <outlet property="delegate" destination="FGZ-tF-Aoa" id="q4c-2E-HVn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="My Tasks" id="2XA-qV-hWZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wYv-8B-8Ws">
+                            <connections>
+                                <action selector="addTaskFunc:" destination="FGZ-tF-Aoa" id="dA1-jp-IOw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="db2-ur-kwl" kind="presentation" identifier="showDetail" id="Pfe-vo-6V1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hpT-7J-TxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4802" y="421"/>
+        </scene>
+        <!--DetailModal-->
+        <scene sceneID="4sn-5M-7GY">
+            <objects>
+                <viewController title="DetailModal" id="lmh-9e-tJ0" customClass="DetailModalViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMY-Sf-YfI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITEM TITLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cty-0q-5o9">
+                                <rect key="frame" x="16" y="56" width="361" height="14.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mU9-PM-Vpc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cty-0q-5o9" firstAttribute="top" secondItem="mU9-PM-Vpc" secondAttribute="top" id="Hv6-9a-0gs"/>
+                            <constraint firstItem="cty-0q-5o9" firstAttribute="leading" secondItem="mU9-PM-Vpc" secondAttribute="leading" constant="16" id="Tnb-Ge-s9c"/>
+                            <constraint firstItem="mU9-PM-Vpc" firstAttribute="trailing" secondItem="cty-0q-5o9" secondAttribute="trailing" constant="16" id="rBT-fd-kHl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="epK-0T-TzH">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qsB-r2-Ihl"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="taskName" destination="cty-0q-5o9" id="K71-eW-OoG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Emx-QK-ckp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2708" y="420"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kRE-6c-VTM">
+            <objects>
+                <navigationController id="7NK-Eb-dch" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z5w-9j-60Z">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FGZ-tF-Aoa" kind="relationship" relationship="rootViewController" id="T53-Dd-xXr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A0a-8Z-OMo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5727" y="421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iLG-CR-RRF">
@@ -180,6 +268,24 @@
             </objects>
             <point key="canvasLocation" x="-3634.3511450381679" y="-564.08450704225356"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hdb-ek-523">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="db2-ur-kwl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LUd-be-yIo">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lmh-9e-tJ0" kind="relationship" relationship="rootViewController" id="Bih-Lg-teT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73b-1e-K19" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3706" y="420"/>
+        </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
@@ -187,6 +293,9 @@
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>
