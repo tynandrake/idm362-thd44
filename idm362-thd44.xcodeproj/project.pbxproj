@@ -9,33 +9,23 @@
 /* Begin PBXBuildFile section */
 		81130E6B2979911900997FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81130E6A2979911900997FD7 /* AppDelegate.swift */; };
 		81130E6D2979911900997FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81130E6C2979911900997FD7 /* SceneDelegate.swift */; };
-		81130E6F2979911900997FD7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81130E6E2979911900997FD7 /* ViewController.swift */; };
 		81130E722979911900997FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81130E702979911900997FD7 /* Main.storyboard */; };
 		81130E742979911A00997FD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81130E732979911A00997FD7 /* Assets.xcassets */; };
-		813002A529B0F01B007375AF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813002A429B0F01B007375AF /* TableViewController.swift */; };
-		813002A729B0FFF6007375AF /* DetailModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813002A629B0FFF6007375AF /* DetailModalViewController.swift */; };
-		81306AFF29AF921C00D0EDA6 /* CoreDataListItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81306AFD29AF921C00D0EDA6 /* CoreDataListItem+CoreDataClass.swift */; };
-		81306B0029AF921C00D0EDA6 /* CoreDataListItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81306AFE29AF921C00D0EDA6 /* CoreDataListItem+CoreDataProperties.swift */; };
-		8150CAF829BA2888005F9674 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8150CAF729BA2888005F9674 /* CustomTableViewCell.swift */; };
+		815F539E29C2A19500857D17 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815F539D29C2A19500857D17 /* HomeTableViewController.swift */; };
 		81B55D9729AF8FF900F11E1C /* idm362_thd44.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81B55D9529AF8FF900F11E1C /* idm362_thd44.xcdatamodeld */; };
-		81C5B65E29B00FDB0085B440 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C5B65D29B00FDB0085B440 /* ModalViewController.swift */; };
+		81E4E39529C24E1A00514917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4E39429C24E1A00514917 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		81130E672979911900997FD7 /* idm362-thd44.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-thd44.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81130E6A2979911900997FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81130E6C2979911900997FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		81130E6E2979911900997FD7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81130E712979911900997FD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81130E732979911A00997FD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81130E782979911A00997FD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		813002A429B0F01B007375AF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		813002A629B0FFF6007375AF /* DetailModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModalViewController.swift; sourceTree = "<group>"; };
-		81306AFD29AF921C00D0EDA6 /* CoreDataListItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataListItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		81306AFE29AF921C00D0EDA6 /* CoreDataListItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataListItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8150CAF729BA2888005F9674 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		815F539D29C2A19500857D17 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		81B55D9629AF8FF900F11E1C /* idm362_thd44.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = idm362_thd44.xcdatamodel; sourceTree = "<group>"; };
-		81C5B65D29B00FDB0085B440 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		81E4E39429C24E1A00514917 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,16 +60,11 @@
 			children = (
 				81130E6A2979911900997FD7 /* AppDelegate.swift */,
 				81130E6C2979911900997FD7 /* SceneDelegate.swift */,
-				81130E6E2979911900997FD7 /* ViewController.swift */,
 				81130E702979911900997FD7 /* Main.storyboard */,
-				8150CAF729BA2888005F9674 /* CustomTableViewCell.swift */,
-				813002A629B0FFF6007375AF /* DetailModalViewController.swift */,
-				813002A429B0F01B007375AF /* TableViewController.swift */,
-				81C5B65D29B00FDB0085B440 /* ModalViewController.swift */,
+				815F539D29C2A19500857D17 /* HomeTableViewController.swift */,
+				81E4E39429C24E1A00514917 /* ViewController.swift */,
 				81130E732979911A00997FD7 /* Assets.xcassets */,
 				81130E782979911A00997FD7 /* Info.plist */,
-				81306AFD29AF921C00D0EDA6 /* CoreDataListItem+CoreDataClass.swift */,
-				81306AFE29AF921C00D0EDA6 /* CoreDataListItem+CoreDataProperties.swift */,
 				81B55D9529AF8FF900F11E1C /* idm362_thd44.xcdatamodeld */,
 			);
 			path = "idm362-thd44";
@@ -155,16 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81130E6F2979911900997FD7 /* ViewController.swift in Sources */,
-				813002A729B0FFF6007375AF /* DetailModalViewController.swift in Sources */,
-				81306B0029AF921C00D0EDA6 /* CoreDataListItem+CoreDataProperties.swift in Sources */,
 				81B55D9729AF8FF900F11E1C /* idm362_thd44.xcdatamodeld in Sources */,
-				813002A529B0F01B007375AF /* TableViewController.swift in Sources */,
+				81E4E39529C24E1A00514917 /* ViewController.swift in Sources */,
 				81130E6B2979911900997FD7 /* AppDelegate.swift in Sources */,
-				8150CAF829BA2888005F9674 /* CustomTableViewCell.swift in Sources */,
 				81130E6D2979911900997FD7 /* SceneDelegate.swift in Sources */,
-				81306AFF29AF921C00D0EDA6 /* CoreDataListItem+CoreDataClass.swift in Sources */,
-				81C5B65E29B00FDB0085B440 /* ModalViewController.swift in Sources */,
+				815F539E29C2A19500857D17 /* HomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +285,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "idm362-thd44/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Lists;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_CFBundleDisplayName = Squad;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,8 +314,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "idm362-thd44/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = Lists;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_CFBundleDisplayName = Squad;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
