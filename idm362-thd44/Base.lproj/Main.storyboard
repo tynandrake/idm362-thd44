@@ -14,7 +14,7 @@
             <objects>
                 <tableViewController id="bx4-wB-tpf" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="q7j-4h-J9f">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="663"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="664"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -123,12 +123,12 @@
             </objects>
             <point key="canvasLocation" x="2823.6641221374043" y="-335.21126760563379"/>
         </scene>
-        <!--View Controller-->
+        <!--Thiago Silva View Controller-->
         <scene sceneID="VZQ-dN-N9t">
             <objects>
-                <viewController id="oFr-2Q-bgc" sceneMemberID="viewController">
+                <viewController id="oFr-2Q-bgc" customClass="ThiagoSilvaViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aDn-Iw-Zi1">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="594"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="595"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPR-WM-GnU">
@@ -137,6 +137,10 @@
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPlay:" destination="i5X-OQ-Ila" eventType="touchUpInside" id="9nA-GI-0hk"/>
+                                    <action selector="buttonPlay:" destination="oFr-2Q-bgc" eventType="touchUpInside" id="gI9-4l-Qoo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6U-nA-cfm">
                                 <rect key="frame" x="16" y="328" width="329" height="32"/>
@@ -145,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-vc-LVg">
-                                <rect key="frame" x="16" y="368" width="329" height="226"/>
+                                <rect key="frame" x="16" y="368" width="329" height="227"/>
                                 <connections>
                                     <segue destination="s45-JP-q5P" kind="embed" id="cqU-yG-Qe5"/>
                                 </connections>
@@ -187,6 +191,7 @@
                     <navigationItem key="navigationItem" id="9gY-X3-433"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ynl-yP-co9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="i5X-OQ-Ila" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3684.7328244274809" y="-851.4084507042254"/>
         </scene>
@@ -195,7 +200,7 @@
             <objects>
                 <tableViewController id="s45-JP-q5P" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="xe3-ND-jtp">
-                        <rect key="frame" x="0.0" y="0.0" width="329" height="226"/>
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -371,7 +376,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsf-YC-RqF">
-                                <rect key="frame" x="16" y="155" width="361" height="663"/>
+                                <rect key="frame" x="16" y="154" width="361" height="664"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
                                     <segue destination="bx4-wB-tpf" kind="embed" id="aO6-SH-ETc"/>
@@ -387,12 +392,12 @@
             </objects>
             <point key="canvasLocation" x="1861.8320610687022" y="-335.21126760563379"/>
         </scene>
-        <!--View Controller-->
+        <!--Ngolo Kante View Controller-->
         <scene sceneID="ZbG-3C-yHi">
             <objects>
-                <viewController id="Iqu-P5-71Z" sceneMemberID="viewController">
+                <viewController id="Iqu-P5-71Z" customClass="NgoloKanteViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AKT-ac-2GX">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="594"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="595"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhC-LP-K1B">
@@ -401,6 +406,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPlay:" destination="Iqu-P5-71Z" eventType="touchUpInside" id="tUz-f0-N5x"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3V-Il-VZj">
                                 <rect key="frame" x="16" y="328" width="329" height="32"/>
@@ -409,7 +417,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m9T-4y-w0E">
-                                <rect key="frame" x="16" y="368" width="329" height="226"/>
+                                <rect key="frame" x="16" y="368" width="329" height="227"/>
                                 <connections>
                                     <segue destination="jJe-AZ-98F" kind="embed" id="add-Ne-5YX"/>
                                 </connections>
@@ -459,7 +467,7 @@
             <objects>
                 <tableViewController id="jJe-AZ-98F" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="gWQ-Sg-J3N">
-                        <rect key="frame" x="0.0" y="0.0" width="329" height="226"/>
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -626,12 +634,12 @@
             </objects>
             <point key="canvasLocation" x="4436" y="-336"/>
         </scene>
-        <!--View Controller-->
+        <!--Kai Havertz View Controller-->
         <scene sceneID="RRb-gD-Nll">
             <objects>
-                <viewController id="XzC-C8-fXe" sceneMemberID="viewController">
+                <viewController id="XzC-C8-fXe" customClass="KaiHavertzViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00n-Is-HNf">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="594"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="595"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mtl-Xn-lJx">
@@ -640,6 +648,9 @@
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system">
                                     <color key="baseForegroundColor" name="AccentColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonPlay:" destination="XzC-C8-fXe" eventType="touchUpInside" id="A4v-fc-Pgx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wd-M3-y4c">
                                 <rect key="frame" x="16" y="328" width="329" height="32"/>
@@ -648,7 +659,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTR-Oe-htc">
-                                <rect key="frame" x="16" y="368" width="329" height="226"/>
+                                <rect key="frame" x="16" y="368" width="329" height="227"/>
                                 <connections>
                                     <segue destination="sVW-4p-ihS" kind="embed" id="BKq-jk-u8H"/>
                                 </connections>
@@ -698,7 +709,7 @@
             <objects>
                 <tableViewController id="sVW-4p-ihS" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qmj-ZG-LDd">
-                        <rect key="frame" x="0.0" y="0.0" width="329" height="226"/>
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="227"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
