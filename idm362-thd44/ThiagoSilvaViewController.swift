@@ -11,11 +11,19 @@ import AVFoundation
 class ThiagoSilvaViewController: UIViewController {
     var audioPlayer: AVAudioPlayer?
 
+    @IBOutlet weak var homeTable: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        roundViewCorners(view: homeTable, radius: 18)
+
     }
+    
+    func roundViewCorners(view: UIView, radius: CGFloat) {
+            view.layer.cornerRadius = radius
+            view.layer.masksToBounds = true
+        }
     
     func playSound() {
             if let soundURL = Bundle.main.url(forResource: "thiago-silva", withExtension: "mp3") {

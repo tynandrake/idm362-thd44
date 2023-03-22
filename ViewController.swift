@@ -10,11 +10,16 @@ import UIKit
 class ViewController: UIViewController {
 
     
+    @IBOutlet weak var homeTable: UIView!
     override func viewDidLoad() {
 
-        // Do any additional setup after loading the view.
+        roundViewCorners(view: homeTable, radius: 18)
     }
     
+    func roundViewCorners(view: UIView, radius: CGFloat) {
+            view.layer.cornerRadius = radius
+            view.layer.masksToBounds = true
+        }
 
     /*
     // MARK: - Navigation
