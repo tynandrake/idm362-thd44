@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVx-BN-YuQ">
-                                <rect key="frame" x="16" y="155" width="361" height="663"/>
+                                <rect key="frame" x="16" y="187" width="361" height="631"/>
                                 <connections>
                                     <segue destination="J4U-0a-7rc" kind="embed" id="4Pq-LL-Tnz"/>
                                 </connections>
@@ -30,7 +30,7 @@
                             <constraint firstItem="M7u-Ze-a0G" firstAttribute="trailing" secondItem="cVx-BN-YuQ" secondAttribute="trailing" constant="16" id="0fp-CA-hLh"/>
                             <constraint firstItem="cVx-BN-YuQ" firstAttribute="bottom" secondItem="M7u-Ze-a0G" secondAttribute="bottom" id="FT2-A9-68i"/>
                             <constraint firstItem="cVx-BN-YuQ" firstAttribute="leading" secondItem="M7u-Ze-a0G" secondAttribute="leading" constant="16" id="ckC-ep-hLY"/>
-                            <constraint firstItem="cVx-BN-YuQ" firstAttribute="top" secondItem="M7u-Ze-a0G" secondAttribute="top" id="fqA-Pz-Zoe"/>
+                            <constraint firstItem="cVx-BN-YuQ" firstAttribute="top" secondItem="M7u-Ze-a0G" secondAttribute="top" constant="32" id="fqA-Pz-Zoe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Squad" id="LLF-0P-pgf"/>
@@ -47,7 +47,7 @@
             <objects>
                 <viewController id="Hv7-Eh-zXQ" customClass="ThiagoSilvaViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CnJ-JC-wld">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="594"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="562"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThiagoSilva" translatesAutoresizingMaskIntoConstraints="NO" id="2bb-ye-yrK">
@@ -73,7 +73,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8VO-gR-MMa">
-                                <rect key="frame" x="16" y="361.66666666666669" width="329" height="232.33333333333331"/>
+                                <rect key="frame" x="16" y="72" width="297" height="200"/>
                                 <connections>
                                     <segue destination="Hy5-r1-FMc" kind="embed" id="8Wd-WQ-NqR"/>
                                 </connections>
@@ -104,14 +104,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mrb-Fg-Bju" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2368.7022900763359" y="534.15492957746483"/>
+            <point key="canvasLocation" x="1975" y="538"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="dE2-oq-eOR">
             <objects>
                 <tableViewController id="Hy5-r1-FMc" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rJ9-Ak-ZZP">
-                        <rect key="frame" x="0.0" y="0.0" width="329" height="232.33333333333334"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rJ9-Ak-ZZP">
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="232"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -148,15 +148,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OTG-ry-h2N">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Minutes Played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OTG-ry-h2N">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="118" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="66Q-7E-b7y">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2287" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="66Q-7E-b7y">
+                                                    <rect key="frame" x="267.33333333333337" y="11.999999999999998" width="41.666666666666664" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -172,15 +172,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UcK-hD-hNY">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Starts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UcK-hD-hNY">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="44" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Xd-5d-rl4">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4Xd-5d-rl4">
+                                                    <rect key="frame" x="288" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -191,7 +191,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="TEAM" id="8kS-J8-URE">
+                            <tableViewSection headerTitle="TOUCHES" id="8kS-J8-URE">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="xox-YK-J1Q" detailTextLabel="6m0-6u-GAZ" style="IBUITableViewCellStyleValue1" id="LWJ-PL-iM5">
                                         <rect key="frame" x="0.0" y="265.00000381469727" width="329" height="45.666667938232422"/>
@@ -200,15 +200,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xox-YK-J1Q">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Tackles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xox-YK-J1Q">
+                                                    <rect key="frame" x="8.0000000000000036" y="11.999999999999998" width="55.333333333333336" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6m0-6u-GAZ">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="22" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6m0-6u-GAZ">
+                                                    <rect key="frame" x="300" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -224,15 +224,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uzK-qr-ddF">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Clearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="uzK-qr-ddF">
+                                                    <rect key="frame" x="8" y="11.999999999999998" width="86" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LWi-XG-eQS">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="89" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LWi-XG-eQS">
+                                                    <rect key="frame" x="300" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -248,15 +248,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vkB-ww-BvN">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Interceptions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vkB-ww-BvN">
+                                                    <rect key="frame" x="8" y="11.999999999999998" width="98" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XH6-rA-8ut">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="29" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XH6-rA-8ut">
+                                                    <rect key="frame" x="300" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -276,14 +276,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mx-7G-wb3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2369" y="1087"/>
+            <point key="canvasLocation" x="1975" y="1090"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="IP3-iu-vhR">
             <objects>
                 <tableViewController id="J4U-0a-7rc" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="eGt-gg-3mt">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="663"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="631"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -304,10 +304,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="#6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ggL-dC-dTw">
-                                                    <rect key="frame" x="316" y="14" width="25" height="26"/>
+                                                    <rect key="frame" x="316.66666666666663" y="15.000000000000002" width="24.333333333333332" height="25.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
+                                                    <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="ThiagoSilva" id="R2T-8i-Pdt">
@@ -339,10 +339,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="#7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4oU-lV-F9T">
-                                                    <rect key="frame" x="316" y="14" width="25" height="26"/>
+                                                    <rect key="frame" x="316.66666666666663" y="15.000000000000002" width="24.333333333333332" height="25.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
+                                                    <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="NGoloKante" id="KJU-0a-4C6">
@@ -374,10 +374,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="#6" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kSO-Jp-XmG">
-                                                    <rect key="frame" x="316" y="14" width="25" height="26"/>
+                                                    <rect key="frame" x="316.66666666666663" y="15.000000000000002" width="24.333333333333332" height="25.666666666666668"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
+                                                    <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="KaiHavertz" id="Z7p-wc-zqH">
@@ -388,6 +388,41 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="J2k-HN-bU0" kind="show" id="1uy-xB-QU6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="STAFF" id="dAn-fx-VsW">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="abh-Qt-jir" detailTextLabel="zsP-wV-4Tt" imageView="k3l-tj-bl4" style="IBUITableViewCellStyleValue1" id="AIr-Qw-uc5">
+                                        <rect key="frame" x="0.0" y="446" width="361" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AIr-Qw-uc5" id="rKZ-uz-fSL">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Graham Potter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="abh-Qt-jir">
+                                                    <rect key="frame" x="89.333333333333329" y="14" width="160.33333333333334" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text=" " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zsP-wV-4Tt">
+                                                    <rect key="frame" x="334.66666666666663" y="14" width="6.333333333333333" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="GrahamPotter" id="k3l-tj-bl4">
+                                                    <rect key="frame" x="20" y="0.0" width="54.333333333333314" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Qx2-uA-KKv" kind="show" id="arX-2J-OLT"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -426,7 +461,7 @@
             <objects>
                 <viewController id="hsr-Ia-6c9" customClass="NgoloKanteViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bNt-j0-vXg">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="594"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="562"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NGoloKante" translatesAutoresizingMaskIntoConstraints="NO" id="Fjd-zE-jj1">
@@ -452,7 +487,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZt-Bw-In1">
-                                <rect key="frame" x="16" y="361.66666666666669" width="329" height="232.33333333333331"/>
+                                <rect key="frame" x="16" y="361.66666666666669" width="329" height="200.33333333333331"/>
                                 <connections>
                                     <segue destination="aQl-90-nZD" kind="embed" id="i5p-vK-EgA"/>
                                 </connections>
@@ -483,13 +518,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nZg-ot-cZP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3114" y="535"/>
+            <point key="canvasLocation" x="2720" y="538"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="kJK-hb-Hy4">
             <objects>
                 <tableViewController id="aQl-90-nZD" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tYQ-oB-Blq">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="tYQ-oB-Blq">
                         <rect key="frame" x="0.0" y="0.0" width="329" height="232.33333333333334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -510,8 +545,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yg4-Vt-a9i">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="26" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yg4-Vt-a9i">
+                                                    <rect key="frame" x="288" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -527,15 +562,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d7Y-pM-zYh">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Minutes Played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d7Y-pM-zYh">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="118" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vf8-R2-JWX">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1778" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vf8-R2-JWX">
+                                                    <rect key="frame" x="268.33333333333337" y="11.999999999999998" width="40.666666666666664" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -551,15 +586,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EAo-iC-5rB">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Starts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EAo-iC-5rB">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="44" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DFH-sw-4lR">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="21" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DFH-sw-4lR">
+                                                    <rect key="frame" x="289.33333333333331" y="11.999999999999998" width="19.666666666666668" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -570,7 +605,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="TEAM" id="k42-eI-wKi">
+                            <tableViewSection headerTitle="TOUCHES" id="k42-eI-wKi">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="lJ8-PQ-3Wa" detailTextLabel="1GN-hN-JRz" style="IBUITableViewCellStyleValue1" id="MbC-PU-Rux">
                                         <rect key="frame" x="0.0" y="265.00000381469727" width="329" height="45.666667938232422"/>
@@ -579,15 +614,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lJ8-PQ-3Wa">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Total Passes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lJ8-PQ-3Wa">
+                                                    <rect key="frame" x="8" y="11.999999999999998" width="91.333333333333329" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1GN-hN-JRz">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="1292" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1GN-hN-JRz">
+                                                    <rect key="frame" x="280.33333333333331" y="11.999999999999998" width="40.666666666666664" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -603,15 +638,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="piF-s8-3y3">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Assists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="piF-s8-3y3">
+                                                    <rect key="frame" x="8.0000000000000036" y="11.999999999999998" width="49.333333333333336" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jRd-Et-XIh">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="4" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jRd-Et-XIh">
+                                                    <rect key="frame" x="310.33333333333331" y="11.999999999999998" width="10.666666666666666" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -627,15 +662,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QhZ-ah-5qB">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Key Passes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QhZ-ah-5qB">
+                                                    <rect key="frame" x="8" y="11.999999999999998" width="83.666666666666671" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JrD-S9-zFW">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="20" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JrD-S9-zFW">
+                                                    <rect key="frame" x="300" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -655,14 +690,14 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCr-cp-FKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3114" y="1087"/>
+            <point key="canvasLocation" x="2720" y="1090"/>
         </scene>
         <!--Kai Havertz View Controller-->
         <scene sceneID="JmT-Q3-bed">
             <objects>
                 <viewController id="J2k-HN-bU0" customClass="KaiHavertzViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h39-No-9Hi">
-                        <rect key="frame" x="0.0" y="0.0" width="361" height="594"/>
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="562"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="KaiHavertz" translatesAutoresizingMaskIntoConstraints="NO" id="Fbf-mh-xOd">
@@ -688,7 +723,7 @@
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zm-y4-pv3">
-                                <rect key="frame" x="16" y="361.66666666666669" width="329" height="232.33333333333331"/>
+                                <rect key="frame" x="16" y="361.66666666666669" width="329" height="200.33333333333331"/>
                                 <connections>
                                     <segue destination="yIg-3L-8Tk" kind="embed" id="IsK-YG-oOz"/>
                                 </connections>
@@ -719,13 +754,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjZ-d9-zjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3836" y="535"/>
+            <point key="canvasLocation" x="3485" y="538"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Nqa-2o-JV2">
             <objects>
                 <tableViewController id="yIg-3L-8Tk" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qfQ-Jr-slh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="qfQ-Jr-slh">
                         <rect key="frame" x="0.0" y="0.0" width="329" height="232.33333333333334"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -746,8 +781,8 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P9V-eL-s4V">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="36" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="P9V-eL-s4V">
+                                                    <rect key="frame" x="288" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -763,15 +798,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jK8-kq-R0f">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Minutes Played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jK8-kq-R0f">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="118" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mkt-hq-n90">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="2560" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mkt-hq-n90">
+                                                    <rect key="frame" x="267" y="11.999999999999998" width="42" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -787,15 +822,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nj2-EM-lZU">
-                                                    <rect key="frame" x="20" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Starts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nj2-EM-lZU">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="44" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BGS-5W-PPu">
-                                                    <rect key="frame" x="288.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="23" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BGS-5W-PPu">
+                                                    <rect key="frame" x="288" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -815,15 +850,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0E1-0n-znJ">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Goals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0E1-0n-znJ">
+                                                    <rect key="frame" x="8" y="11.999999999999998" width="46" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2HA-ao-VaO">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="7" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2HA-ao-VaO">
+                                                    <rect key="frame" x="310.33333333333331" y="11.999999999999998" width="10.666666666666666" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -839,15 +874,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tqg-6c-LAM">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Assists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Tqg-6c-LAM">
+                                                    <rect key="frame" x="8.0000000000000036" y="11.999999999999998" width="49.333333333333336" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S5m-pI-YMH">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="S5m-pI-YMH">
+                                                    <rect key="frame" x="310.33333333333331" y="11.999999999999998" width="10.666666666666666" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -863,15 +898,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Appearances" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugE-mE-bsJ">
-                                                    <rect key="frame" x="8" y="11.999999999999998" width="103" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="Key Passes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ugE-mE-bsJ">
+                                                    <rect key="frame" x="8" y="11.999999999999998" width="83.666666666666671" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="27" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AI4-Fv-4L2">
-                                                    <rect key="frame" x="300.33333333333331" y="11.999999999999998" width="20.666666666666668" height="22.333333333333332"/>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" text="22" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AI4-Fv-4L2">
+                                                    <rect key="frame" x="300" y="11.999999999999998" width="21" height="22.333333333333332"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -891,10 +926,171 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HIF-sy-dgc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3836" y="1087"/>
+            <point key="canvasLocation" x="3485" y="1090"/>
+        </scene>
+        <!--Graham Potter View Controller-->
+        <scene sceneID="KXV-u6-O4a">
+            <objects>
+                <viewController id="Qx2-uA-KKv" customClass="GrahamPotterViewController" customModule="idm362_thd44" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3jv-QT-azV">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="562"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GrahamPotter" translatesAutoresizingMaskIntoConstraints="NO" id="i1N-Je-4re">
+                                <rect key="frame" x="16" y="58.999999999999986" width="329" height="217.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i1N-Je-4re" secondAttribute="height" multiplier="361:239" id="Q6L-jE-Rxm"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Graham Potter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kI4-Ol-L9t">
+                                <rect key="frame" x="16" y="284.66666666666669" width="329" height="26"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vq-Aw-E7T">
+                                <rect key="frame" x="16" y="318.66666666666669" width="329" height="35"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="buttonPlay:" destination="Qx2-uA-KKv" eventType="touchUpInside" id="RWH-TI-FLZ"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YlA-c9-ayG">
+                                <rect key="frame" x="16" y="361.66666666666669" width="329" height="200.33333333333331"/>
+                                <connections>
+                                    <segue destination="uWu-X4-jia" kind="embed" id="m3h-bO-2L6"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bpe-Bn-50d"/>
+                        <color key="backgroundColor" name="ChelseaBlue"/>
+                        <constraints>
+                            <constraint firstItem="bpe-Bn-50d" firstAttribute="trailing" secondItem="YlA-c9-ayG" secondAttribute="trailing" constant="16" id="1vd-0j-2uA"/>
+                            <constraint firstItem="kI4-Ol-L9t" firstAttribute="top" secondItem="i1N-Je-4re" secondAttribute="bottom" constant="8" symbolic="YES" id="2Qb-Ea-wc3"/>
+                            <constraint firstItem="bpe-Bn-50d" firstAttribute="trailing" secondItem="i1N-Je-4re" secondAttribute="trailing" constant="16" id="40U-Rt-12t"/>
+                            <constraint firstItem="i1N-Je-4re" firstAttribute="top" secondItem="bpe-Bn-50d" secondAttribute="top" id="F5q-ED-Ezw"/>
+                            <constraint firstItem="YlA-c9-ayG" firstAttribute="leading" secondItem="bpe-Bn-50d" secondAttribute="leading" constant="16" id="KzD-sG-8Fz"/>
+                            <constraint firstItem="bpe-Bn-50d" firstAttribute="trailing" secondItem="6vq-Aw-E7T" secondAttribute="trailing" constant="16" id="LGR-uC-TZ4"/>
+                            <constraint firstItem="kI4-Ol-L9t" firstAttribute="leading" secondItem="bpe-Bn-50d" secondAttribute="leading" constant="16" id="Rxu-yv-ri8"/>
+                            <constraint firstItem="6vq-Aw-E7T" firstAttribute="top" secondItem="kI4-Ol-L9t" secondAttribute="bottom" constant="8" symbolic="YES" id="U3y-EV-Xkq"/>
+                            <constraint firstItem="6vq-Aw-E7T" firstAttribute="leading" secondItem="bpe-Bn-50d" secondAttribute="leading" constant="16" id="Ybd-sr-Mxx"/>
+                            <constraint firstItem="YlA-c9-ayG" firstAttribute="bottom" secondItem="bpe-Bn-50d" secondAttribute="bottom" id="d0P-N0-jTf"/>
+                            <constraint firstItem="bpe-Bn-50d" firstAttribute="trailing" secondItem="kI4-Ol-L9t" secondAttribute="trailing" constant="16" id="erR-ee-IVr"/>
+                            <constraint firstItem="i1N-Je-4re" firstAttribute="leading" secondItem="bpe-Bn-50d" secondAttribute="leading" constant="16" id="l0v-da-YVn"/>
+                            <constraint firstItem="YlA-c9-ayG" firstAttribute="top" secondItem="6vq-Aw-E7T" secondAttribute="bottom" constant="8" symbolic="YES" id="vFp-0c-VAd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VXs-FE-2PH"/>
+                    <connections>
+                        <outlet property="homeTable" destination="YlA-c9-ayG" id="CBR-0E-5tK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B4K-ZI-RD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4256" y="537"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="B0z-0L-8KF">
+            <objects>
+                <tableViewController id="uWu-X4-jia" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Xlq-ZW-H57">
+                        <rect key="frame" x="0.0" y="0.0" width="329" height="232.33333333333334"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="TEAM" id="lM2-JV-WfO">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="gn7-XD-oAc" detailTextLabel="LRt-eL-Ifg" style="IBUITableViewCellStyleValue1" id="lmX-sN-8ld">
+                                        <rect key="frame" x="0.0" y="50" width="329" height="45.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lmX-sN-8ld" id="T4P-nd-55R">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Matches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gn7-XD-oAc">
+                                                    <rect key="frame" x="20" y="11.999999999999998" width="65.666666666666671" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="30" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="LRt-eL-Ifg">
+                                                    <rect key="frame" x="288" y="11.999999999999998" width="21" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="t1k-zA-znV" detailTextLabel="5UE-Yy-61l" style="IBUITableViewCellStyleValue1" id="1vg-mH-jrj">
+                                        <rect key="frame" x="0.0" y="95.666667938232422" width="329" height="45.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1vg-mH-jrj" id="jg2-bv-i5z">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Wins" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="t1k-zA-znV">
+                                                    <rect key="frame" x="19.999999999999996" y="11.999999999999998" width="38.666666666666664" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5UE-Yy-61l">
+                                                    <rect key="frame" x="289.33333333333331" y="11.999999999999998" width="19.666666666666668" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="u0R-Rb-VsV" detailTextLabel="TWS-pX-h7S" style="IBUITableViewCellStyleValue1" id="7Oi-Xu-1Nm">
+                                        <rect key="frame" x="0.0" y="141.33333587646484" width="329" height="45.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Oi-Xu-1Nm" id="ItX-Vb-FmH">
+                                            <rect key="frame" x="0.0" y="0.0" width="329" height="45.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Points per match" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="u0R-Rb-VsV">
+                                                    <rect key="frame" x="20.000000000000007" y="11.999999999999998" width="126.66666666666667" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="1.47" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TWS-pX-h7S">
+                                                    <rect key="frame" x="273" y="11.999999999999998" width="36" height="22.333333333333332"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="uWu-X4-jia" id="7Dh-Uh-Cpi"/>
+                            <outlet property="delegate" destination="uWu-X4-jia" id="vDt-rK-pUi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVo-VR-6sd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4256" y="1090"/>
         </scene>
     </scenes>
     <resources>
+        <image name="GrahamPotter" width="390" height="390"/>
         <image name="KaiHavertz" width="390" height="390"/>
         <image name="NGoloKante" width="390" height="390"/>
         <image name="ThiagoSilva" width="390" height="390"/>

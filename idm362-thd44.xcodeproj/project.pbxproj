@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810A05AB29CCAA0A00C4B681 /* GrahamPotterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A05AA29CCAA0A00C4B681 /* GrahamPotterViewController.swift */; };
+		810A05AD29CCAB2400C4B681 /* graham-potter.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 810A05AC29CCAB2400C4B681 /* graham-potter.mp3 */; };
 		81130E6B2979911900997FD7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81130E6A2979911900997FD7 /* AppDelegate.swift */; };
 		81130E6D2979911900997FD7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81130E6C2979911900997FD7 /* SceneDelegate.swift */; };
 		81130E722979911900997FD7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81130E702979911900997FD7 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		810A05AA29CCAA0A00C4B681 /* GrahamPotterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrahamPotterViewController.swift; sourceTree = "<group>"; };
+		810A05AC29CCAB2400C4B681 /* graham-potter.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "graham-potter.mp3"; sourceTree = "<group>"; };
 		81130E672979911900997FD7 /* idm362-thd44.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-thd44.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81130E6A2979911900997FD7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81130E6C2979911900997FD7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +82,7 @@
 				81ED102D29C77F13000C01BC /* ThiagoSilvaViewController.swift */,
 				8196FCD529C7898C0059608C /* NgoloKanteViewController.swift */,
 				8196FCD729C789EC0059608C /* KaiHavertzViewController.swift */,
+				810A05AA29CCAA0A00C4B681 /* GrahamPotterViewController.swift */,
 				81130E732979911A00997FD7 /* Assets.xcassets */,
 				81ED102F29C787A2000C01BC /* Sounds */,
 				81130E782979911A00997FD7 /* Info.plist */,
@@ -89,6 +94,7 @@
 		81ED102F29C787A2000C01BC /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				810A05AC29CCAB2400C4B681 /* graham-potter.mp3 */,
 				81ED103029C787A2000C01BC /* thiago-silva.mp3 */,
 				81ED103129C787A2000C01BC /* kai-havertz.mp3 */,
 				81ED103229C787A2000C01BC /* ngolo-kante.mp3 */,
@@ -158,6 +164,7 @@
 				81ED103529C787A2000C01BC /* ngolo-kante.mp3 in Resources */,
 				81130E722979911900997FD7 /* Main.storyboard in Resources */,
 				81ED103329C787A2000C01BC /* thiago-silva.mp3 in Resources */,
+				810A05AD29CCAB2400C4B681 /* graham-potter.mp3 in Resources */,
 				81ED103429C787A2000C01BC /* kai-havertz.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +182,7 @@
 				81130E6B2979911900997FD7 /* AppDelegate.swift in Sources */,
 				81130E6D2979911900997FD7 /* SceneDelegate.swift in Sources */,
 				8196FCD629C7898C0059608C /* NgoloKanteViewController.swift in Sources */,
+				810A05AB29CCAA0A00C4B681 /* GrahamPotterViewController.swift in Sources */,
 				81ED102E29C77F13000C01BC /* ThiagoSilvaViewController.swift in Sources */,
 				815F539E29C2A19500857D17 /* HomeTableViewController.swift in Sources */,
 			);
